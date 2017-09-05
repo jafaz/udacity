@@ -1,0 +1,19 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+  * What new skills have you learned?
+    I learned that HTML5 is more than just use tags to organize information. It is about to create documents with meaning.
+
+  * What has been easy?
+    The lessons are very good designed so it has been easy to follow them.
+  
+  * What has been difficult?
+    Figure it out what are you expectig. I mean, there are several ways to organice information using HTML and you have your own way and standars.
+
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+    I used the mozilla HTML element reference as a guide to finish the quizzes and the get feedback that you guys give me to improve my first project submission
