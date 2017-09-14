@@ -1,0 +1,48 @@
+/* add your CSS here */
+
+body{
+  font-size: 18px;
+}
+
+#card{
+  width: 450px;
+  margin: 12px 0 0 4px;
+  padding: 0px 15px;
+  border: 1px solid #ccc;
+  box-shadow: 10px 10px 5px #eee;
+}
+
+#card .name{
+  font-size: 27px;
+  font-weight: bold;
+}
+
+#card .information{
+  border: 1px solid #ccc;
+  margin: 15px 0px;
+  padding-left:15px;
+  padding: 0px 0px 15px 15px;
+}
+ 
+#card img{
+  width: 450px;
+  height: 300px;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.favorite-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.favorite-list > li{
+  list-style: none;
+}
+
+.favorite-list > li > span {
+  font-weight: bold;
+}
+
