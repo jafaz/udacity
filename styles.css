@@ -1,32 +1,33 @@
 /* add your CSS here */
 
-body{
+body {
   font-size: 18px;
 }
 
-#card{
-  width: 450px;
+#card {
+  width: 300px;
   margin: 12px 0 0 4px;
   padding: 0px 15px;
   border: 1px solid #ccc;
   box-shadow: 10px 10px 5px #eee;
 }
 
-#card .name{
+#card .name {
   font-size: 27px;
   font-weight: bold;
 }
 
-#card .information{
+#card .information {
   border: 1px solid #ccc;
   margin: 15px 0px;
   padding-left:15px;
-  padding: 0px 0px 15px 15px;
+  padding: 0px 10px 15px 15px;
 }
  
-#card img{
-  width: 450px;
-  height: 300px;
+#card img {
+  width: 300px;
+  margin: 0 auto;
+  height: auto;
 }
 
 .italic{
@@ -38,7 +39,7 @@ body{
   padding: 0px;
 }
 
-.favorite-list > li{
+.favorite-list > li {
   list-style: none;
 }
 
