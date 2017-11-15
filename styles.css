@@ -1,49 +1,145 @@
-/* add your CSS here */
-
-body {
-  font-size: 18px;
+body{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  color: #2d3c49;
 }
 
-#card {
-  width: 300px;
-  margin: 12px 0 0 4px;
-  padding: 0px 15px;
-  border: 1px solid #ccc;
-  box-shadow: 10px 10px 5px #eee;
+header {
+  display: flex;
+  border-bottom: 3px solid #7d97ad;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+
 }
 
-#card .name {
-  font-size: 27px;
+header h1 {
+  font-size: 60px;
+  color: #666;
+  margin-bottom: 1px;
+}
+
+.work h2 {
+  font-size: 35px;
+  color: #7d97ad;
   font-weight: bold;
+  padding-left: 20px;
 }
 
-#card .information {
-  border: 1px solid #ccc;
-  margin: 15px 0px;
-  padding-left:15px;
-  padding: 0px 10px 15px 15px;
-}
- 
-#card img {
-  width: 300px;
-  margin: 0 auto;
-  height: auto;
+.work h3 {
+  text-transform: uppercase;
+  color: #2d3c49;
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto 5px auto;
 }
 
-.italic{
-  font-style: italic;
+.work p {
+  font-size: 16px;
+  text-align: center;
 }
 
-.favorite-list {
-  margin: 0px;
+.logo {
+  width: 102px;
+  height: 90px;
+  margin-top: 30px;
+}
+
+hgroup{
+  text-align: right;
+  width: 100%;
+}
+
+section {
+  //width: 100%;
+}
+
+.main-project{
+  margin: 40px 0px;
+  padding: 0;
+}
+
+
+.main-project img {
+  width: 100%;
+}
+
+.work img{
+  width: 100%;
+}
+
+
+.colors {
+  margin-top: 145px;
+}
+
+.colors ul {
+  list-style-type: none;
+
   padding: 0px;
+
+
 }
 
-.favorite-list > li {
-  list-style: none;
+
+.colors li {
+  margin-bottom: 25px;
 }
 
-.favorite-list > li > span {
+.colors div {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.color1 {
+  background-color: #02b3e4;
+}
+
+.color2 {
+  background-color: #2d3c49;
+}
+
+.color3 {
+  background-color: #7d97ad;
+}
+
+.colors p {
+  text-align: center;
   font-weight: bold;
+  font-size: 23px;
 }
 
+
+
+@media screen and (max-width: 991px) {
+  .colors {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 45px;
+  }
+  header p {
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 66px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 45px;
+  }
+}
