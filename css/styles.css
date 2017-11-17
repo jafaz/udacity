@@ -1,8 +1,12 @@
+/* General settings */
 body{
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   color: #2d3c49;
 }
+
+
+/* Header */
 
 header {
   display: flex;
@@ -17,6 +21,21 @@ header h1 {
   color: #666;
   margin-bottom: 1px;
 }
+
+
+header .logo {
+  width: 102px;
+  height: 90px;
+  margin-top: 30px;
+}
+
+header hgroup {
+  text-align: right;
+  width: 100%;
+}
+
+
+/* Work section */
 
 .work h2 {
   font-size: 35px;
@@ -39,22 +58,15 @@ header h1 {
   text-align: center;
 }
 
-.logo {
-  width: 102px;
-  height: 90px;
-  margin-top: 30px;
-}
-
-hgroup{
-  text-align: right;
+.work img{
   width: 100%;
 }
 
-section {
-  //width: 100%;
-}
 
-.main-project{
+
+/* Main project */
+
+.main-project {
   margin: 40px 0px;
   padding: 0;
 }
@@ -64,10 +76,8 @@ section {
   width: 100%;
 }
 
-.work img{
-  width: 100%;
-}
 
+/* Aside section */
 
 .colors {
   margin-top: 145px;
@@ -112,6 +122,7 @@ section {
 }
 
 
+/* Media querys */
 
 @media screen and (max-width: 991px) {
   .colors {
