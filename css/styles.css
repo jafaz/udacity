@@ -1,5 +1,5 @@
 /* General settings */
-body{
+body {
   font-family: "Work Sans", sans-serif;
   font-size: 22px;
   color: #2d3c49;
@@ -9,29 +9,35 @@ body{
 /* Header */
 
 header {
-  display: flex;
+  /* display: flex; */
   border-bottom: 3px solid #7d97ad;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding: 0 0 10px;
+  margin: 0;
 
 }
 
 header h1 {
   font-size: 60px;
   color: #666;
-  margin-bottom: 1px;
+  text-align: right;
+}
+
+header h1 p {
+  margin: 0;
+  padding: 0;
 }
 
 
+header h1 span {
+  display: block;
+  font-size: 22px;
+
+}
 header .logo {
   width: 102px;
   height: 90px;
   margin-top: 30px;
-}
-
-header hgroup {
-  text-align: right;
-  width: 100%;
 }
 
 
@@ -58,7 +64,7 @@ header hgroup {
   text-align: center;
 }
 
-.work img{
+.work img {
   width: 100%;
 }
 
@@ -77,80 +83,35 @@ header hgroup {
 }
 
 
-/* Aside section */
-
-.colors {
-  margin-top: 145px;
-}
-
-.colors ul {
-  list-style-type: none;
-
-  padding: 0px;
-
-
-}
-
-
-.colors li {
-  margin-bottom: 25px;
-}
-
-.colors div {
-  width: 75px;
-  height: 75px;
-  margin: 0 auto;
-  padding-left: 20px;
-}
-
-.color1 {
-  background-color: #02b3e4;
-}
-
-.color2 {
-  background-color: #2d3c49;
-}
-
-.color3 {
-  background-color: #7d97ad;
-}
-
-.colors p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 23px;
-}
-
-
 /* Media querys */
 
-@media screen and (max-width: 991px) {
-  .colors {
-    margin-top: 10px;
-  }
-}
+@media screen and (max-width: 767px) {
 
-@media screen and (max-width: 500px) {
   header h1 {
-    font-size: 45px;
-  }
-  header p {
-    font-size: 15px;
-  }
-
-  .logo {
-    width: 66px;
-    height: 60px;
+    font-size: 50px;
+    margin-top: 25px;
   }
 }
 
-@media screen and (max-width: 350px) {
-  header h1 {
-    font-size: 30px;
-  }
 
-  .logo {
-    width: 50px;
-    height: 45px;
+@media screen and (max-width: 450px) {
+
+    header h1 {
+      font-size: 40px;
+    }
+    header h1 span {
+      font-size: 18px;
+    }
+ }
+
+
+ @media screen and (max-width: 400px) {
+
+    header h1 {
+      font-size: 30px;
+    }
+    .logo {
+      width: 50px;
+      height: 45px;
+    }
   }
-}
