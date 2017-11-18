@@ -1,4 +1,5 @@
 /* General settings */
+
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 22px;
@@ -14,7 +15,6 @@ header {
   text-transform: uppercase;
   padding: 0 0 10px;
   margin: 0;
-
 }
 
 header h1 {
@@ -28,12 +28,11 @@ header h1 p {
   padding: 0;
 }
 
-
 header h1 span {
   display: block;
   font-size: 22px;
-
 }
+
 header .logo {
   width: 102px;
   height: 90px;
@@ -69,7 +68,6 @@ header .logo {
 }
 
 
-
 /* Main project */
 
 .main-project {
@@ -77,41 +75,40 @@ header .logo {
   padding: 0;
 }
 
-
 .main-project img {
   width: 100%;
+}
+
+.main-project .col {
+  margin: 0;
+  padding: 0;
 }
 
 
 /* Media querys */
 
 @media screen and (max-width: 767px) {
-
   header h1 {
     font-size: 50px;
     margin-top: 25px;
   }
 }
 
-
 @media screen and (max-width: 450px) {
-
-    header h1 {
-      font-size: 40px;
-    }
-    header h1 span {
-      font-size: 18px;
-    }
- }
-
-
- @media screen and (max-width: 400px) {
-
-    header h1 {
-      font-size: 30px;
-    }
-    .logo {
-      width: 50px;
-      height: 45px;
-    }
+  header h1 {
+    font-size: 40px;
   }
+  header h1 span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 30px;
+  }
+  .logo {
+    width: 50px;
+    height: 45px;
+  }
+}

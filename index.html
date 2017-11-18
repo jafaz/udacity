@@ -12,9 +12,9 @@
   <!-- UDACITY: Build a Portfolio Project Rubric.  -->
   <body>
 
-    <!-- General container -->
+    <!-- Main container-->
 
-      <article class="container">
+      <div class="container">
 
         <!-- Header of the page, includes a logo and a title
              It use FLEX and bootstrap to display both objects in the same line
@@ -28,8 +28,10 @@
         </header>
 
         <!-- First section: main images-->
-        <section class="main-project col-md-12 ">
-          <img  class="img-responsive" src="img/main-project.jpg" alt="Current Project - learning HTML5">
+        <section class="main-project row">
+          <div class="col-sm-12 col">
+            <img  class="img-responsive" src="img/main-project.jpg" alt="Current Project - learning HTML5">
+          </div>
         </section>
 
         <!--
@@ -37,9 +39,9 @@
           The section uses bootstrap system columns to organize it.
         -->
 
-        <section class="work">
-          <h2> Featured Work </h2>
-          <div class="row">
+        <section class="work row">
+
+            <div class="col-sm-12"><h2> Featured Work </h2></div>
             <article class="project col-md-4">
               <img src="img/p1.jpg" alt="Mockup Project">
               <h3> Mockup </h3>
@@ -55,10 +57,10 @@
               <h3> Portfolio </h3>
               <p> https://github.com/jafaz/udacity </p>
             </article>
-          </div>
+
         </section>
 
-      </article>
+      </div>
 
   </body>
 </html>
