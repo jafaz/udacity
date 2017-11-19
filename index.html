@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Project: Build a Portafolio Site</title>
+  <title>Project: Build a Portfolio Site</title>
 </head>
 
-  <!-- UDACITY: Build a Portfolio Project Rubric.  -->
-  <body>
+<!-- UDACITY: Build a Portfolio Project Rubric.  -->
 
-    <!-- Main container-->
+<body>
 
-      <div class="container">
+  <!-- Main bootstrap container-->
+  <div class="container">
 
-        <!-- Header of the page, includes a logo and a title
-             It use FLEX and bootstrap to display both objects in the same line
-        -->
-        <header class="d-flex flex-row justify-content-between">
-          <img class="logo p-2" src="img/logo.jpg" alt="Logo">
-          <h1 class="p-2">
-            Ilia Alvarez
-            <span> Front-End Ninja </span>
-          </h1>
-        </header>
-
-        <!-- First section: main images-->
-        <section class="main-project row">
-          <div class="col-sm-12 col">
-            <img  class="img-responsive" src="img/main-project.jpg" alt="Current Project - learning HTML5">
-          </div>
-        </section>
-
-        <!--
-          Second section: shows the resent portfolio's works
-          The section uses bootstrap system columns to organize it.
-        -->
-
-        <section class="work row">
-
-            <div class="col-sm-12"><h2> Featured Work </h2></div>
-            <article class="project col-md-4">
-              <img src="img/p1.jpg" alt="Mockup Project">
-              <h3> Mockup </h3>
-              <p>https://github.com/jafaz/udacity</p>
-            </article>
-            <article class="project col-md-4">
-              <img src="img/p2.jpg" alt="Cards Project">
-              <h3> Cards </h3>
-              <p> https://github.com/jafaz/udacity </p>
-            </article>
-            <article class="project col-md-4">
-              <img src="img/p3.jpg" alt="Portfolio Project">
-              <h3> Portfolio </h3>
-              <p> https://github.com/jafaz/udacity </p>
-            </article>
-
-        </section>
-
+    <!--
+      Header of the page, includes a logo and a title
+      It uses bootstrap to display both objects in the same line
+    -->
+    <header class="row">
+      <div class="col-sm-12 d-flex flex-row justify-content-between">
+        <img class="logo p-2" src="img/logo.jpg" alt="Logo">
+        <h1 class="p-2">
+          Ilia Alvarez
+          <span> Front-End Ninja </span>
+        </h1>
       </div>
+    </header>
 
-  </body>
+    <!-- First section: main images -->
+    <main class="row main-project">
+      <div class="col-sm-12 col">
+        <img class="img-responsive" src="img/main-project.jpg" alt="Current Project - learning HTML5">
+      </div>
+    </main>
+
+    <!--
+      Second section: shows the resent portfolio's works
+      The section uses bootstrap system columns to organize it.
+    -->
+    <section class="row work">
+      <div class="col-sm-12">
+        <h2> Featured Work </h2>
+      </div>
+      <article class="project col-md-4">
+        <img src="img/p1.jpg" alt="Mockup Project">
+        <h3> Mockup </h3>
+        <p>https://github.com/jafaz/udacity</p>
+      </article>
+      <article class="project col-md-4">
+        <img src="img/p2.jpg" alt="Cards Project">
+        <h3> Cards </h3>
+        <p> https://github.com/jafaz/udacity </p>
+      </article>
+      <article class="project col-md-4">
+        <img src="img/p3.jpg" alt="Portfolio Project">
+        <h3> Portfolio </h3>
+        <p> https://github.com/jafaz/udacity </p>
+      </article>
+    </section>
+
+  </div>
+
+</body>
+
 </html>
