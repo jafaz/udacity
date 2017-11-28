@@ -1,70 +1,30 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Project: Build a Portfolio Site</title>
+    <meta charset="UTF-8">
+    <title>Pixel Art Maker!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<!-- UDACITY: Build a Portfolio Project Rubric.  -->
-
 <body>
+    <h1>Lab: Pixel Art Maker</h1>
 
-  <!-- Main bootstrap container-->
-  <div class="container">
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="submit">
+    </form>
 
-    <!--
-      Header of the page, includes a logo and a title
-      It uses bootstrap to display both objects in the same line
-    -->
-    <header class="row">
-      <div class="col-sm-12 d-flex flex-row justify-content-between">
-        <img class="logo p-2" src="img/logo.jpg" alt="Logo">
-        <h1 class="p-2">
-          Ilia Alvarez
-          <span> Front-End Ninja </span>
-        </h1>
-      </div>
-    </header>
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
 
-    <!-- First section: main images -->
-    <main class="row main-project">
-      <div class="col-sm-12 col">
-        <img class="img-responsive" src="img/main-project.jpg" alt="Current Project - learning HTML5">
-      </div>
-    </main>
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table>
 
-    <!--
-      Second section: shows the resent portfolio's works
-      The section uses bootstrap system columns to organize it.
-    -->
-    <section class="row work">
-      <div class="col-sm-12">
-        <h2> Featured Work </h2>
-      </div>
-      <article class="project col-md-4">
-        <img src="img/p1.jpg" alt="Mockup Project">
-        <h3> Mockup </h3>
-        <p>https://github.com/jafaz/udacity</p>
-      </article>
-      <article class="project col-md-4">
-        <img src="img/p2.jpg" alt="Cards Project">
-        <h3> Cards </h3>
-        <p> https://github.com/jafaz/udacity </p>
-      </article>
-      <article class="project col-md-4">
-        <img src="img/p3.jpg" alt="Portfolio Project">
-        <h3> Portfolio </h3>
-        <p> https://github.com/jafaz/udacity </p>
-      </article>
-    </section>
-
-  </div>
-
+    <script src="designs.js"></script>
 </body>
-
 </html>
