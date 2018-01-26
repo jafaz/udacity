@@ -1,30 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Pixel Art Maker!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
-        <input type="submit">
-    </form>
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
 
-    <h2>Design Canvas</h2>
-    <table id="pixel_canvas"></table>
+             <span class="moves">0</span> Moves
 
-    <script src="designs.js"></script>
+            [time: <spam class="time"></spam> secs]
+
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+
+        <ul class="deck">
+            <li class="card" data-card='0'>
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" data-card="0">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" data-card="1">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" data-card="1">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" data-card="2">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" data-card="2">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" data-card="3">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" data-card="3">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" data-card="4">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card" data-card="4">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card" data-card="5">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" data-card="5">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" data-card="6">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" data-card="6">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" data-card="7">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" data-card="7">
+                <i class="fa fa-bomb"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4>Congratulation you WON!</h4>
+              <section class="score-panel">
+                    <p>Time: <span class="time"></span> seconds</p>
+                    <p><i class="fa fa-star"></i> <span class="star"></span> of 3 stars - <span class="moves"></span> Moves</p>
+
+                </section>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary restart">Play again!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
